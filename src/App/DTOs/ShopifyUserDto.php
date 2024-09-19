@@ -13,6 +13,7 @@ class ShopifyUserDto extends SimpleDTO
 
     public int     $id;
     public string  $name;
+    public string  $shop_name;
     public string  $email;
     public ?Carbon $email_verified_at;
     public string  $password;
