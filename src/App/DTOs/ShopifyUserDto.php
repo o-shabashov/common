@@ -44,6 +44,7 @@ class ShopifyUserDto extends SimpleDTO
     {
         return [
             'password' => 'shopify_access_token',
+            'name'     => 'shop_name',
         ];
     }
 
