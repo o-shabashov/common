@@ -38,7 +38,7 @@ class ShopifyUserDto extends SimpleDTO
         ];
     }
 
-    protected function mapData(): array
+    protected function mapToTransform(): array
     {
         return [
             'password' => 'shopify_access_token',
