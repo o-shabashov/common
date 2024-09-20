@@ -4,13 +4,10 @@ namespace App\DTOs;
 
 use Carbon\Carbon;
 use WendellAdriel\ValidatedDTO\Casting\CarbonCast;
-use WendellAdriel\ValidatedDTO\Concerns\EmptyCasts;
 use WendellAdriel\ValidatedDTO\SimpleDTO;
 
 class ShopifyUserDto extends SimpleDTO
 {
-    use EmptyCasts;
-
     public int     $id;
     public string  $name;
     public string  $shop_name;
