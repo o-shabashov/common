@@ -10,11 +10,9 @@ class ShopifyUserDto extends SimpleDTO
 {
     public int     $id;
     public string  $name;
-    public string  $shop_name;
     public string  $email;
     public ?Carbon $email_verified_at;
     public string  $password;
-    public string  $shopify_access_token;
     public ?Carbon $created_at;
     public ?Carbon $updated_at;
     public ?bool   $shopify_grandfathered;
@@ -35,14 +33,6 @@ class ShopifyUserDto extends SimpleDTO
             'updated_at'          => new CarbonCast(),
             'deleted_at'          => new CarbonCast(),
             'password_updated_at' => new CarbonCast(),
-        ];
-    }
-
-    protected function mapToTransform(): array
-    {
-        return [
-            'password' => 'shopify_access_token',
-            'name'     => 'shop_name',
         ];
     }
 
