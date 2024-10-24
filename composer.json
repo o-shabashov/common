@@ -8,6 +8,7 @@
   },
   "require": {
     "php": "^8.3",
+    "emreyarligan/enum-concern": "^1.0",
     "wendelladriel/laravel-validated-dto": "^3.8"
   },
   "config" : {
@@ -18,5 +19,8 @@
     "optimize-autoloader" : true,
     "preferred-install" : "dist",
     "sort-packages" : true
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.5"
   }
 }
