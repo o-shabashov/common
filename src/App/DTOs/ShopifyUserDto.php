@@ -24,6 +24,7 @@ class ShopifyUserDto extends SimpleDTO
     public ?int    $theme_support_level;
     public ?int    $cassie_id;
     public ?string $cassie_access_token;
+    public ?int    $shopify_id;
 
     protected function casts(): array
     {
